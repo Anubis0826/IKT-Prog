@@ -1,5 +1,4 @@
 from tkinter import *
-ablak1 = Tk()
 ablak = Tk()
 mezo1=Entry(ablak)
 mezo1.grid(row=0, column=2)
