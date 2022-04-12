@@ -5,11 +5,15 @@ abl1.geometry("600x400")
 
 def ujablak():
     abl2=Toplevel(abl1)
-    uz2.insert(abl2, text=felszin, width=300)
+    abl2.title('Eredmények')
+    abl2.minsize(width=300,height=100)
+    sz1=Label(abl2,text=felszin)
+    sz2=Label(abl2,text=terfogat)
+    m1=Entry(abl2)
+    m2=Entry(abl2)
     gomb2=Button(abl2, text=felszin, command=abl2.destroy)
     uz2.pack()
     gomb2.pack()
-    abl2.mainloop()
     a = eval(mezo1.get())
     b = eval(mezo2.get())
     c = eval(mezo3.get())
@@ -19,7 +23,7 @@ def ujablak():
     m1.insert(0,str(felszin))
     m2.delete(0,END)
     m2.insert(0,str(terfogat))
-
+    abl2.mainloop()
 
 
 
