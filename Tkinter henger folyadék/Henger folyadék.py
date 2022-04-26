@@ -10,7 +10,7 @@ def szamolas():
     terf=math.pi*sugar**2*magas
     liter=terf/1000
     bor=int(mezo1.get())
-    mezo4.insert(0,"{:.0f}".format(liter)+" literes a hordó.")
+    mezo4.insert(0,"{:.0f}".format(liter)+" literes a hordó")
 
 mezo1=Entry(ablak)
 mezo1.grid(row=1, column=1)
